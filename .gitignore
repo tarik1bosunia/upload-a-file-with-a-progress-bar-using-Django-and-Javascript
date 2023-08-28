@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/pycharm+all,django,dotenv
-# Edit at https://www.toptal.com/developers/gitignore?templates=pycharm+all,django,dotenv
+# Created by https://www.toptal.com/developers/gitignore/api/pycharm+all,django,dotenv,venv
+# Edit at https://www.toptal.com/developers/gitignore?templates=pycharm+all,django,dotenv,venv
 
 ### Django ###
 *.log
@@ -261,4 +261,16 @@ fabric.properties
 !.idea/codeStyles
 !.idea/runConfigurations
 
-# End of https://www.toptal.com/developers/gitignore/api/pycharm+all,django,dotenv
+### venv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+pip-selfcheck.json
+
+# End of https://www.toptal.com/developers/gitignore/api/pycharm+all,django,dotenv,venv

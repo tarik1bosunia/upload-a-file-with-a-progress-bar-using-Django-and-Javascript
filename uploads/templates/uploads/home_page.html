@@ -1,11 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Upload File With Progressbar</title>
-</head>
-<body>
-<h1>Homepage</h1>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block content %}
+    <div id="alert-box"></div>
+    <div id="image-box"></div>
+    <br>
+
+    <h1>Upload an Image</h1>
+
+    <form action=""  id="upload-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+    </form>
+    <br>
+
+    <div id="progress-box" class="not-visible">
+    Progress
+    </div>
+
+    <div id="cancel-box" class="not-visible">
+        <div id="cancel-btn" class="btn btn-danger">Cancel</div>
+    </div>
+
+    {#    <div>#}
+    {#        <h1>Upload an Image</h1>#}
+    {#        <form method="post" enctype="multipart/form-data">#}
+    {#            {% csrf_token %}#}
+    {#            {{ form.as_p }}#}
+    {#            <button type="submit">Upload</button>#}
+    {#        </form>#}
+    {#    </div>#}
+
+
+{% endblock content %}
